@@ -24,6 +24,9 @@ body{
   background-color: hsl(217, 19%, 24%);
 }
 
+.space{
+  letter-spacing: 5px;
+}
 
 
 @keyframes spin {

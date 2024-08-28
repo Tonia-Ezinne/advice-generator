@@ -31,19 +31,19 @@ function App() {
   }, []);
 
   return (
-    <div className="card w-11/12 mx-auto lg:w-5/12 py-6 rounded-lg my-32 flex flex-col justify-center items-center relative gap-4 px-12">
+    <div className="card w-11/12 mx-auto lg:w-5/12 py-6  rounded-lg my-32 flex flex-col justify-center items-center relative gap-4 px-12">
       {loading ? (
         <p className="text-white text-center mt-3 text-[28px] font-semibold">
           Loading...
         </p>
       ) : (
         <>
-          <h1 className="text-[#52ffa8] mt-5 text-center">
+          <h1 className="text-[#52ffa8] mt-3 space text-center">
             Advice #{adviceData.id}
           </h1>
           <p className="text-white text-center font-semibold mt-3 text-[28px]">{`"${adviceData.advice}"`}</p>
 
-          <div className="mt-2">
+          <div className="mt-5">
             <Image
               src="/pattern-divider-desktop.svg"
               width={600}
@@ -53,7 +53,7 @@ function App() {
             />
           </div>
 
-          <div>
+          <div className="mb-5">
             <Image
               src="/pattern-divider-mobile.svg"
               width={600}
